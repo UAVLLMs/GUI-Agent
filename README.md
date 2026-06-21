@@ -118,7 +118,7 @@ flowchart LR
     P6["⑥ 执行<br/>ADB真机操作"]:::s6
 
     IN --> P1 --> P2 --> P3 --> P4 --> P5 --> P6
-    P6 -. "回流新截图<br/>进入下一步" .-> P1
+    P6 -.->|回流新截图，进入下一步| P1
 
     classDef input fill:#eef2f6,stroke:#8aa0b2,color:#2b3440,stroke-width:2px
     classDef s1 fill:#fdf6f0,stroke:#e79a5c,color:#2b3440,stroke-width:2px
@@ -140,19 +140,19 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    A["screenshot(当前帧)"] --> B{"卡死/停滞检测<br/>32×32 平均哈希"}
-    B -- "画面冻结+原地重复" --> G1["强制 BACK 脱困"]
-    B -- "原地打转" --> G2["强制 SCROLL 探索"]
-    B -- "正常" --> C["组装 Prompt<br/>指令+置顶记忆+App提示<br/>+11动作+23策略+20步历史"]
+    A["screenshot 当前帧"] --> B{"卡死/停滞检测<br/>32x32 平均哈希"}
+    B -->|画面冻结+原地重复| G1["强制 BACK 脱困"]
+    B -->|原地打转| G2["强制 SCROLL 探索"]
+    B -->|正常| C["组装 Prompt<br/>指令+置顶记忆+App提示<br/>+11动作+23策略+20步历史"]
     C --> D["调用多模态 LLM<br/>temperature=0 · 3次重试"]
-    D --> E["捕获 REMEMBER 标记<br/>→ 写入置顶记忆"]
+    D --> E["捕获 REMEMBER 标记<br/>写入置顶记忆"]
     E --> F["从严到松解码动作"]
     F --> H{"COMPLETE 误判?"}
-    H -- "无完成意图" --> I["降级 WAIT 保活"]
-    H -- "正常" --> J["通用护栏修正<br/>+ 坐标钳制 + 标准化兜底"]
-    J --> K["记录历史<br/>(附精简 Thought)"]
-    K --> L["device.execute()<br/>真机操作"]
-    L -. 下一步 .-> A
+    H -->|无完成意图| I["降级 WAIT 保活"]
+    H -->|正常| J["通用护栏修正<br/>坐标钳制 + 标准化兜底"]
+    J --> K["记录历史<br/>附精简 Thought"]
+    K --> L["device.execute 真机操作"]
+    L -.->|下一步| A
 
     classDef d fill:#eef4fa,stroke:#5f9bc4,color:#2b3440
     classDef g fill:#fdf2ee,stroke:#d98c7a,color:#2b3440
@@ -357,7 +357,7 @@ flowchart LR
     D["💡 技能蒸馏<br/>高分轨迹→可复用文档"]:::d
 
     T --> R --> S --> D
-    D -- "反哺 Prompt 与策略" --> T
+    D -->|反哺 Prompt 与策略| T
 
     classDef t fill:#fdf6f0,stroke:#e79a5c,color:#2b3440,stroke-width:2px
     classDef r fill:#eef4fa,stroke:#5f9bc4,color:#2b3440,stroke-width:2px
