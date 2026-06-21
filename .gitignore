@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+
+# 测试输出（真机执行产生的截图与轨迹，体积大、不入库）
+output/
+output*/
+my_output/
+*.log
+run_metadata.json
+
+# 密钥与本地配置（API Key 仅走环境变量，绝不入库）
+.env
+*.key
+secrets.*
+
+# IDE / 系统
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

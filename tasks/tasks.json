@@ -1,0 +1,62 @@
+[
+  {
+    "id": "step_onekey_A_0002",
+    "instruction": "在QQ音乐搜索光年之外并播放邓紫棋演唱的版本",
+    "app": "QQ音乐",
+    "max_steps": 30
+  },
+  {
+    "id": "step_onekey_A_0009",
+    "instruction": "在哔哩哔哩搜索Python入门教程并播放播放量最高的",
+    "app": "哔哩哔哩",
+    "max_steps": 30
+  },
+  {
+    "id": "step_onekey_A_0003",
+    "instruction": "去爱奇艺打开狂飙的评论区，发布评论：太好看了",
+    "app": "爱奇艺",
+    "max_steps": 30
+  },
+  {
+    "id": "step_onekey_B_0001",
+    "instruction": "在携程旅行的酒店里预订6月28日到6月30日丽江低价优先里最便宜的酒店的单人女生床位房",
+    "app": "携程旅行",
+    "max_steps": 30
+  },
+  {
+    "id": "step_onekey_B_0003",
+    "instruction": "打开滴滴出行搜索从中兴通讯西安长安基地到西安欧亚学院需要多少钱，中间经过一下陕西考古博物馆",
+    "app": "滴滴出行",
+    "max_steps": 30
+  },
+  {
+    "id": "step_onekey_B_0004",
+    "instruction": "帮我找一下附近点评最高的咖啡馆，然后导航过去",
+    "app": "高德地图",
+    "max_steps": 30
+  },
+  {
+    "id": "step_onekey_B_0007",
+    "instruction": "在哔哩哔哩中搜索赵丽颖筛选播放最多和最近一天和0-10分钟的视频",
+    "app": "哔哩哔哩",
+    "max_steps": 30
+  },
+  {
+    "id": "step_onekey_B_0022",
+    "instruction": "打开高德地图搜索从上海虹桥火车站到外滩的公交路线，选换乘次数最少的方案并查看首班车时间",
+    "app": "高德地图",
+    "max_steps": 50
+  },
+  {
+    "id": "step_onekey_B_0012",
+    "instruction": "打开得到App搜索skill开发相关课程，找到四个评分超过4.8的加入我的书单",
+    "app": "得到",
+    "max_steps": 50
+  },
+  {
+    "id": "step_onekey_B_0015",
+    "instruction": "帮我把豆瓣里的音乐排行榜前五给我放到QQ音乐里新建一个歌单，并开始播放此歌单",
+    "app": "豆瓣,QQ音乐",
+    "max_steps": 80
+  }
+]
