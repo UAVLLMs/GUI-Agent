@@ -28,6 +28,18 @@
 
 ---
 
+<div align="center">
+
+### 🎬 真机操作演示
+
+<img src="assets/demo.gif" width="320" alt="TapPilot 真机操作演示" />
+
+<sub>▶ 真机实时操控 · 自动完成「高德地图找附近评分最高咖啡馆并导航」全流程 · 完整演示见 <a href="https://www.bilibili.com/video/BV1HF8XzbEM3/">📺 Bilibili</a></sub>
+
+</div>
+
+---
+
 ## 📑 目录
 
 - [项目背景](#-项目背景)
